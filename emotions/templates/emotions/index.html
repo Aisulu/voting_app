@@ -1,0 +1,50 @@
+
+
+{% if logged_user.is_authenticated %}
+Welcome,
+{{user.username}}!
+
+<br>
+<br>
+
+
+{% if voted_tweets_number %}
+You voted for
+{{voted_tweets_number}}
+tweet(s).
+<br>
+{% if unvoted_tweets_number %}
+There are {{unvoted_tweets_number}} more to go!
+<br>
+<br>
+
+<a href="/emotions/vote.html">Continue to vote</a>
+
+
+
+{% else %}
+You are done!
+{% endif %}
+{% else %}
+<p>You did not vote yet</p>
+<a href="/emotions/vote.html">Start voting</a>
+{% endif %}
+
+
+<br>
+<br>
+
+
+
+
+
+<a href="/emotions/logout_view.html">Logout</a>
+
+
+
+
+
+{% else %}
+<p>Please <a href="/login">login</a> to view this page. </p>
+{% endif %}
+

@@ -1,0 +1,287 @@
+input{
+    border:1px solid black;
+}
+input:focus{
+    background-color: #E6E6E6;
+}
+
+#nick{
+    margin-left: 4%;
+    display:none;
+    width: 400px;
+}
+
+p{
+    background: rgb(234, 234, 234);
+    border: 1px solid rgb(200, 200, 200);}
+.solid {border-style:solid; width: 30em; height: 4em;
+}
+
+#grad_1_1, #grad_1_2, #grad_1_3, #grad_1_4, #grad_1_5, #grad_1_6, #grad_1_7,
+#grad_2_1, #grad_2_2, #grad_2_3, #grad_2_4, #grad_2_5, #grad_2_6, #grad_2_7,
+#grad_3_1, #grad_3_2, #grad_3_3, #grad_3_4, #grad_3_5, #grad_3_6, #grad_3_7,
+#grad_4_1, #grad_4_2, #grad_4_3, #grad_4_4, #grad_4_5, #grad_4_6, #grad_4_7
+{
+    width:65px;
+    height: 20px;
+    float: left;
+    color: black;
+    font-size: 80%;
+}
+
+
+
+
+#grad_1_1 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, blue , dodgerblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, blue, dodgerblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, blue, dodgerblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, blue , dodgerblue); /* Standard syntax */
+    color: white
+}
+
+#grad_1_2 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, dodgerblue , lightskyblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, dodgerblue, lightskyblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, dodgerblue, lightskyblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, dodgerblue , lightskyblue); /* Standard syntax */
+}
+
+#grad_1_3 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, lightskyblue , lightblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lightskyblue, lightblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lightskyblue, lightblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lightskyblue , lightblue); /* Standard syntax */
+}
+
+#grad_1_4 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, lightblue , lightblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lightblue, lightblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lightblue, lightblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lightblue , lightblue); /* Standard syntax */
+    color: lightblue
+}
+
+#grad_1_5 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, lightblue , lemonchiffon); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lightblue, lemonchiffon); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lightblue, lemonchiffon); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lightblue , lemonchiffon); /* Standard syntax */
+}
+
+#grad_1_6 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, lemonchiffon , khaki); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lemonchiffon, khaki); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lemonchiffon, khaki); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lemonchiffon , khaki); /* Standard syntax */
+}
+
+#grad_1_7 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, khaki , gold); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, khaki, gold); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, khaki, gold); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, khaki , gold); /* Standard syntax */
+}
+
+#grad_2_1 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, lightseagreen , mediumaquamarine); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lightseagreen, mediumaquamarine); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lightseagreen, mediumaquamarine); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lightseagreen , mediumaquamarine); /* Standard syntax */
+}
+
+#grad_2_2 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, mediumaquamarine , aquamarine); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, mediumaquamarine, aquamarine); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, mediumaquamarine, aquamarine); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, mediumaquamarine , aquamarine); /* Standard syntax */
+}
+
+#grad_2_3 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, aquamarine , paleturquoise); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, aquamarine, paleturquoise); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, aquamarine, paleturquoise); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, aquamarine , paleturquoise); /* Standard syntax */
+}
+
+#grad_2_4 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, paleturquoise , paleturquoise); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, paleturquoise, paleturquoise); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, paleturquoise, paleturquoise); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, paleturquoise , paleturquoise); /* Standard syntax */
+    color: paleturquoise
+}
+
+#grad_2_5 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, paleturquoise , thistle); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, paleturquoise, thistle); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, paleturquoise, thistle); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, paleturquoise , thistle); /* Standard syntax */
+}
+
+#grad_2_6 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, thistle , orchid); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, thistle, orchid); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, thistle, orchid); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, thistle , orchid); /* Standard syntax */
+}
+
+#grad_2_7 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, orchid , mediumorchid); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, orchid, mediumorchid); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, orchid, mediumorchid); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, orchid , mediumorchid); /* Standard syntax */
+}
+
+#grad_3_1 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, darkgreen , mediumseagreen); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, darkgreen, mediumseagreen); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, darkgreen, mediumseagreen); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, darkgreen , mediumseagreen); /* Standard syntax */
+}
+
+#grad_3_2 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, mediumseagreen , lightgreen); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, mediumseagreen, lightgreen); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, mediumseagreen, lightgreen); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, mediumseagreen , lightgreen); /* Standard syntax */
+}
+
+#grad_3_3 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, lightgreen , honeydew); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lightgreen, honeydew); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lightgreen, honeydew); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lightgreen , honeydew); /* Standard syntax */
+}
+
+#grad_3_4 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, honeydew , honeydew); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, honeydew, honeydew); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, honeydew, honeydew); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, honeydew , honeydew); /* Standard syntax */
+    color: honeydew
+}
+
+#grad_3_5 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, honeydew , mistyrose); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, honeydew, mistyrose); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, honeydew, mistyrose); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, honeydew , mistyrose); /* Standard syntax */
+}
+
+#grad_3_6 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, mistyrose , lightcoral); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, mistyrose, lightcoral); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, mistyrose, lightcoral); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, mistyrose , lightcoral); /* Standard syntax */
+}
+
+#grad_3_7 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, lightcoral , crimson); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lightcoral, crimson); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lightcoral, crimson); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lightcoral , crimson); /* Standard syntax */
+}
+
+#grad_4_1 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, dodgerblue , deepskyblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, dodgerblue, deepskyblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, dodgerblue, deepskyblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, dodgerblue , deepskyblue); /* Standard syntax */
+}
+
+#grad_4_2 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, deepskyblue , lightskyblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, deepskyblue, lightskyblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, deepskyblue, lightskyblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, deepskyblue , lightskyblue); /* Standard syntax */
+}
+
+#grad_4_3 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, lightskyblue , aliceblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lightskyblue, aliceblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lightskyblue, aliceblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lightskyblue , aliceblue); /* Standard syntax */
+}
+
+#grad_4_4 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, aliceblue , aliceblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, aliceblue, aliceblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, aliceblue, aliceblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, aliceblue , aliceblue); /* Standard syntax */
+    color: aliceblue
+}
+
+#grad_4_5 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, aliceblue , bisque); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, aliceblue, bisque); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, aliceblue, bisque); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, aliceblue , bisque); /* Standard syntax */
+}
+
+#grad_4_6 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, bisque , lightsalmon); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, bisque, lightsalmon); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, bisque, lightsalmon); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, bisque , lightsalmon); /* Standard syntax */
+}
+
+#grad_4_7 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, lightsalmon , tomato); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lightsalmon, tomato); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lightsalmon, tomato); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lightsalmon , tomato); /* Standard syntax */
+}
+
+#trust_disgust, #sad_joy, #fear_anger, #surprise_interest{
+    display:none;
+    font-size: 80%;
+}
+
+
+#anger, #disgust, #fear, #joy, #sadness, #surprise, #trust, #anticipation{
+    font-size: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
