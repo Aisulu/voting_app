@@ -26,7 +26,7 @@ Database file containing all the initial Tweets + results of labelling.
 - user: test
 - pass: Test1234
 
-## Access to database**
+## Access to database
 
 - user: rahaisulu
 - pass: admin_path
