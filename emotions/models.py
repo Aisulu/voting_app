@@ -6,7 +6,6 @@ from django.contrib.auth.models import User
 class Tweet(models.Model):
     tweet_id = models.CharField(max_length=20)
     original_text = models.CharField(max_length=200)
-    #clear_text = models.CharField(max_length=200)
     
     def __str__(self):
         return self.original_text
@@ -23,7 +22,6 @@ class Vote(models.Model):
     surprise = models.FloatField(default = 0.0)
     trust = models.FloatField(default = 0.0)
     anticipation = models.FloatField(default = 0.0)
-    
 
 
 

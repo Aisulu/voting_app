@@ -11,170 +11,127 @@
     
 {% if logged_user.is_authenticated %}
 
+    {% if unvoted_tweets_number %}
+        Dear {{logged_user.username}},
+        your progress is: {{voted_tweets_number}}/{{total_tweets_number}}. <br><br>
+
+
+        Please vote for this tweet: <br>
+        <p class="solid" id="tweet">{{first_unvoted_tweet}}</p1> <br><br><br><br>
+         
+         
+        <form action="{% url 'evaluate' first_unvoted_tweet_id %}" method="post">
+        {% csrf_token %}
+        {% load static %}
+         
+             
+        <table width="38%">
+            <tr>
+                <th></th>
+                <th>none</th>
+                <th>little</th>
+                <th>mid.</th>
+                <th>a lot</th>
+            </tr>
+            
+
+            <tr bgcolor="#FCF3CF">
+                <th>JOY</th>
+
+                <th><input type="radio" id = "joy_radio" name = "joy_radio" value="0" checked/></th>
+                <th><input type="radio" id = "joy_radio" name = "joy_radio" value="1" /></th>
+                <th><input type="radio" id = "joy_radio" name = "joy_radio" value="2" /></th>
+                <th><input type="radio" id = "joy_radio" name = "joy_radio" value="3" /></th>
+            </tr>
+
+            <tr bgcolor="#ABEBC6">
+                <th>TRUST</th>
+
+                <th><input type="radio" id = "trust_radio" name = "trust_radio" value="0" checked/></th>
+                <th><input type="radio" id = "trust_radio" name = "trust_radio" value="1" /></th>
+                <th><input type="radio" id = "trust_radio" name = "trust_radio" value="2" /></th>
+                <th><input type="radio" id = "trust_radio" name = "trust_radio" value="3" /></th>
+            </tr>
+
+            <tr bgcolor="#2ECC71">
+                <th>FEAR</th>
+
+                <th><input type="radio" id = "fear_radio" name = "fear_radio" value="0" checked/></th>
+                <th><input type="radio" id = "fear_radio" name = "fear_radio" value="1" /></th>
+                <th><input type="radio" id = "fear_radio" name = "fear_radio" value="2" /></th>
+                <th><input type="radio" id = "fear_radio" name = "fear_radio" value="3"  /></th>
+            </tr>
+
+            <tr bgcolor="#85C1E9">
+                <th>SURPRISE</th>
+
+                <th><input type="radio" id = "surprise_radio" name = "surprise_radio" value="0" checked/></th>
+                <th><input type="radio" id = "surprise_radio" name = "surprise_radio" value="1" /></th>
+                <th><input type="radio" id = "surprise_radio" name = "surprise_radio" value="2" /></th>
+                <th><input type="radio" id = "surprise_radio" name = "surprise_radio" value="3" /></th>
+            </tr>
+
+            <tr bgcolor="#5499C7">
+                <th>SADNESS</th>
+
+                <th><input type="radio" id = "sadness_radio" name = "sadness_radio" value="0" checked/></th>
+                <th><input type="radio" id = "sadness_radio" name = "sadness_radio" value="1" /></th>
+                <th><input type="radio" id = "sadness_radio" name = "sadness_radio" value="2" /></th>
+                <th><input type="radio" id = "sadness_radio" name = "sadness_radio" value="3"  /></th>
+            </tr>
+
+            <tr bgcolor="#C39BD3">
+                <th>DISGUST</th>
+
+                <th><input type="radio" id = "disgust_radio" name = "disgust_radio" value="0" checked/></th>
+                <th><input type="radio" id = "disgust_radio" name = "disgust_radio" value="1" /></th>
+                <th><input type="radio" id = "disgust_radio" name = "disgust_radio" value="2" /></th>
+                <th><input type="radio" id = "disgust_radio" name = "disgust_radio" value="3" /></th>
+            </tr>    
+
+            <tr bgcolor="#F75D59">
+                <th>ANGER</th>
+
+                <th><input type="radio" id = "anger_radio" name = "anger_radio" value="0" checked /></th>
+                <th><input type="radio" id = "anger_radio" name = "anger_radio" value="1" /></th>
+                <th><input type="radio" id = "anger_radio" name = "anger_radio" value="2" /></th>
+                <th><input type="radio" id = "anger_radio" name = "anger_radio" value="3" /></th>
+            </tr>
+
+            <tr bgcolor="#F8C471">
+                <th>ANTICIPATION</th>
+
+                <th><input type="radio" id = "anticipation_radio" name = "anticipation_radio" value="0" checked/></th>
+                <th><input type="radio" id = "anticipation_radio" name = "anticipation_radio" value="1" /></th>
+                <th><input type="radio" id = "anticipation_radio" name = "anticipation_radio" value="2" /></th>
+                <th><input type="radio" id = "anticipation_radio" name = "anticipation_radio" value="3" /></th>
+            </tr>
+
+
+         </table><br>
+         
+         
+         <input type="submit" value="Vote!" />
+         </form><br>
+
+
+        {% else%}<br>
+            You are done!<br>
+            We deeply appreciate your help, thank you!
+        
+        {% endif %}
 
 
 
- {% if unvoted_tweets_number %}
- Dear {{logged_user.username}},
-your progress is: {{voted_tweets_number}}/{{total_tweets_number}}.
-
-<br>
-<br>
-
-
- Please vote for this tweet:
- <br>
- <p class="solid" id="tweet">{{first_unvoted_tweet}}</p1>
- <br>
- <br>
- <br>
- <br>
- 
- <!--
- <form action="{% url 'delete' first_unvoted_tweet_id %}" method="post">
-    {% csrf_token %}
- 
-    {% load static %}
- 
-    <input type="submit" value="Delete" />
- </form>
--->
-
-<form action="{% url 'evaluate' first_unvoted_tweet_id %}" method="post">
- {% csrf_token %}
- 
- {% load static %}
- 
- 
-     
-<table width="38%">
-    <tr>
-        <th></th>
-        <th>none</th>
-        <th>little</th>
-        <th>mid.</th>
-        <th>a lot</th>
-    </tr>
-    
-
-    <tr bgcolor="#FCF3CF">
-        <th>JOY</th>
-
-        <th><input type="radio" id = "joy_radio" name = "joy_radio" value="0" checked/></th>
-        <th><input type="radio" id = "joy_radio" name = "joy_radio" value="1" /></th>
-        <th><input type="radio" id = "joy_radio" name = "joy_radio" value="2" /></th>
-        <th><input type="radio" id = "joy_radio" name = "joy_radio" value="3" /></th>
-    </tr>
-
-    <tr bgcolor="#ABEBC6">
-        <th>TRUST</th>
-
-        <th><input type="radio" id = "trust_radio" name = "trust_radio" value="0" checked/></th>
-        <th><input type="radio" id = "trust_radio" name = "trust_radio" value="1" /></th>
-        <th><input type="radio" id = "trust_radio" name = "trust_radio" value="2" /></th>
-        <th><input type="radio" id = "trust_radio" name = "trust_radio" value="3" /></th>
-    </tr>
-
-    <tr bgcolor="#2ECC71">
-        <th>FEAR</th>
-
-        <th><input type="radio" id = "fear_radio" name = "fear_radio" value="0" checked/></th>
-        <th><input type="radio" id = "fear_radio" name = "fear_radio" value="1" /></th>
-        <th><input type="radio" id = "fear_radio" name = "fear_radio" value="2" /></th>
-        <th><input type="radio" id = "fear_radio" name = "fear_radio" value="3"  /></th>
-    </tr>
-
-    <tr bgcolor="#85C1E9">
-        <th>SURPRISE</th>
-
-        <th><input type="radio" id = "surprise_radio" name = "surprise_radio" value="0" checked/></th>
-        <th><input type="radio" id = "surprise_radio" name = "surprise_radio" value="1" /></th>
-        <th><input type="radio" id = "surprise_radio" name = "surprise_radio" value="2" /></th>
-        <th><input type="radio" id = "surprise_radio" name = "surprise_radio" value="3" /></th>
-    </tr>
-
-    <tr bgcolor="#5499C7">
-        <th>SADNESS</th>
-
-        <th><input type="radio" id = "sadness_radio" name = "sadness_radio" value="0" checked/></th>
-        <th><input type="radio" id = "sadness_radio" name = "sadness_radio" value="1" /></th>
-        <th><input type="radio" id = "sadness_radio" name = "sadness_radio" value="2" /></th>
-        <th><input type="radio" id = "sadness_radio" name = "sadness_radio" value="3"  /></th>
-    </tr>
-
-    <tr bgcolor="#C39BD3">
-        <th>DISGUST</th>
-
-        <th><input type="radio" id = "disgust_radio" name = "disgust_radio" value="0" checked/></th>
-        <th><input type="radio" id = "disgust_radio" name = "disgust_radio" value="1" /></th>
-        <th><input type="radio" id = "disgust_radio" name = "disgust_radio" value="2" /></th>
-        <th><input type="radio" id = "disgust_radio" name = "disgust_radio" value="3" /></th>
-    </tr>    
-
-    <tr bgcolor="#F75D59">
-        <th>ANGER</th>
-
-        <th><input type="radio" id = "anger_radio" name = "anger_radio" value="0" checked /></th>
-        <th><input type="radio" id = "anger_radio" name = "anger_radio" value="1" /></th>
-        <th><input type="radio" id = "anger_radio" name = "anger_radio" value="2" /></th>
-        <th><input type="radio" id = "anger_radio" name = "anger_radio" value="3" /></th>
-    </tr>
-
-    <tr bgcolor="#F8C471">
-        <th>ANTICIPATION</th>
-
-        <th><input type="radio" id = "anticipation_radio" name = "anticipation_radio" value="0" checked/></th>
-        <th><input type="radio" id = "anticipation_radio" name = "anticipation_radio" value="1" /></th>
-        <th><input type="radio" id = "anticipation_radio" name = "anticipation_radio" value="2" /></th>
-        <th><input type="radio" id = "anticipation_radio" name = "anticipation_radio" value="3" /></th>
-    </tr>
-
-
-
-
- </table>
- 
- 
- <br>
- 
- 
- <input type="submit" value="Vote!" />
- </form>
-
-
-
-
-<br>
-
-{% else%}
-<br>
-You are done!
-<br>
-We deeply appreciate your help, thank you!
- {% endif %}
-
- 
- 
-
-
-
-
- <a href="/emotions/">Back to dashboard</a>
-
-<br>
-<br>
+    <a href="/emotions/">Back to dashboard</a><br><br>
 
 
 
 {% else %}
-<p>Please <a href="/login">login</a> to view this page. </p>
+    <p>Please <a href="/login">login</a> to view this page. </p>
+
 {% endif %}
-
-
-
-
 
 
 </body>
 </html>
-
